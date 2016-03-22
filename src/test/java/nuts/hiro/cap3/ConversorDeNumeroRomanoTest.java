@@ -5,7 +5,7 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-public class ConversorDeNumeroRomanoTestI {
+public class ConversorDeNumeroRomanoTest {
 
 	@Test
 	public void deveEntenderOSimbolo(){
