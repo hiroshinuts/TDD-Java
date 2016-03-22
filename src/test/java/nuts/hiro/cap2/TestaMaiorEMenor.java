@@ -21,5 +21,18 @@ public class TestaMaiorEMenor {
 		
 		
 	}
+	
+	@Test
+	public void apenasUmProduto(){
+		CarrinhoDeCompras carrinho = new CarrinhoDeCompras();
+		carrinho.adiciona(new Produto("Geladeira", 450.0));
+		
+		MaiorEMenor algoritmo = new MaiorEMenor();
+		algoritmo.encontra(carrinho);
+		
+		Assert.assertEquals("Geladeira", algoritmo.getMenor().getNome());
+		Assert.assertEquals("Geladeira", algoritmo.getMaior().getNome());
+		
+	}
 
 }
